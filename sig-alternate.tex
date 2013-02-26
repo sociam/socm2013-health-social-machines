@@ -1,0 +1,484 @@
+% This is "sig-alternate.tex" V2.0 May 2012
+% This file should be compiled with V2.5 of "sig-alternate.cls" May 2012
+%
+% This example file demonstrates the use of the 'sig-alternate.cls'
+% V2.5 LaTeX2e document class file. It is for those submitting
+% articles to ACM Conference Proceedings WHO DO NOT WISH TO
+% STRICTLY ADHERE TO THE SIGS (PUBS-BOARD-ENDORSED) STYLE.
+% The 'sig-alternate.cls' file will produce a similar-looking,
+% albeit, 'tighter' paper resulting in, invariably, fewer pages.
+%
+% ----------------------------------------------------------------------------------------------------------------
+% This .tex file (and associated .cls V2.5) produces:
+%       1) The Permission Statement
+%       2) The Conference (location) Info information
+%       3) The Copyright Line with ACM data
+%       4) NO page numbers
+%
+% as against the acm_proc_article-sp.cls file which
+% DOES NOT produce 1) thru' 3) above.
+%
+% Using 'sig-alternate.cls' you have control, however, from within
+% the source .tex file, over both the CopyrightYear
+% (defaulted to 200X) and the ACM Copyright Data
+% (defaulted to X-XXXXX-XX-X/XX/XX).
+% e.g.
+% \CopyrightYear{2007} will cause 2007 to appear in the copyright line.
+% \crdata{0-12345-67-8/90/12} will cause 0-12345-67-8/90/12 to appear in the copyright line.
+%
+% ---------------------------------------------------------------------------------------------------------------
+% This .tex source is an example which *does* use
+% the .bib file (from which the .bbl file % is produced).
+% REMEMBER HOWEVER: After having produced the .bbl file,
+% and prior to final submission, you *NEED* to 'insert'
+% your .bbl file into your source .tex file so as to provide
+% ONE 'self-contained' source file.
+%
+% ================= IF YOU HAVE QUESTIONS =======================
+% Questions regarding the SIGS styles, SIGS policies and
+% procedures, Conferences etc. should be sent to
+% Adrienne Griscti (griscti@acm.org)
+%
+% Technical questions _only_ to
+% Gerald Murray (murray@hq.acm.org)
+% ===============================================================
+%
+% For tracking purposes - this is V2.0 - May 2012
+
+\documentclass{sig-alternate}
+
+\usepackage{url}
+
+\begin{document}
+%
+% --- Author Metadata here ---
+\conferenceinfo{Social Machines Workshop}{2013, Paris, France}
+%\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
+%\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
+% --- End of Author Metadata ---
+
+\title{A Framework for Classification of Social Machines}
+%\subtitle{[Extended Abstract]
+%\titlenote{A full version of this paper is available as
+%\textit{Author's Guide to Preparing ACM SIG Proceedings Using
+%\LaTeX$2_\epsilon$\ and BibTeX} at
+%\texttt{www.acm.org/eaddress.htm}}}
+%
+% You need the command \numberofauthors to handle the 'placement
+% and alignment' of the authors beneath the title.
+%
+% For aesthetic reasons, we recommend 'three authors at a time'
+% i.e. three 'name/affiliation blocks' be placed beneath the title.
+%
+% NOTE: You are NOT restricted in how many 'rows' of
+% "name/affiliations" may appear. We just ask that you restrict
+% the number of 'columns' to three.
+%
+% Because of the available 'opening page real-estate'
+% we ask you to refrain from putting more than six authors
+% (two rows with three columns) beneath the article title.
+% More than six makes the first-page appear very cluttered indeed.
+%
+% Use the \alignauthor commands to handle the names
+% and affiliations for an 'aesthetic maximum' of six authors.
+% Add names, affiliations, addresses for
+% the seventh etc. author(s) as the argument for the
+% \additionalauthors command.
+% These 'additional authors' will be output/set for you
+% without further effort on your part as the last section in
+% the body of your article BEFORE References or any Appendices.
+
+\numberofauthors{1} %  in this sample file, there are a *total*
+% of EIGHT authors. SIX appear on the 'first-page' (for formatting
+% reasons) and the remaining two appear in the \additionalauthors section.
+%
+\author{
+% You can go ahead and credit any number of authors here,
+% e.g. one 'row of three' or two rows (consisting of one row of three
+% and a second row of one, two or three).
+%
+% The command \alignauthor (no curly braces needed) should
+% precede each author name, affiliation/snail-mail address and
+% e-mail address. Additionally, tag each line of
+% affiliation/address with \affaddr, and tag the
+% e-mail address with \email.
+%
+% 1st. author
+\alignauthor
+Authors\\
+       \affaddr{Web and Internet Science Group}\\
+       \affaddr{University of Southampton}\\
+       \affaddr{Southampton, UK}\\
+       \email{\{a,b,c,d,wh,nrs\}@ecs.soton.ac.uk}
+}
+% There's nothing stopping you putting the seventh, eighth, etc.
+% author on the opening page (as the 'third row') but we ask,
+% for aesthetic reasons that you place these 'additional authors'
+% in the \additional authors block, viz.
+%\additionalauthors{Additional authors: John Smith (The Th{\o}rv{\"a}ld Group,
+%email: {\texttt{jsmith@affiliation.org}}) and Julius P.~Kumquat
+%(The Kumquat Consortium, email: {\texttt{jpkumquat@consortium.net}}).}
+%\date{30 July 1999}
+% Just remember to make sure that the TOTAL number of authors
+% is the number that will appear on the first page PLUS the
+% number that will appear in the \additionalauthors section.
+
+\maketitle
+\begin{abstract}
+
+This paper provides a framework for...
+
+\end{abstract}
+
+% A category with the (minimum) three required fields
+%\category{H.4}{Information Systems Applications}{Miscellaneous}
+%A category including the fourth, optional field follows...
+%\category{D.2.8}{Software Engineering}{Metrics}[complexity measures, performance measures]
+
+%\terms{Theory}
+
+%\keywords{ACM proceedings, \LaTeX, text tagging}
+
+\section{Introduction (0.5 page)}
+
+What are social machines and why are they important
+
+An emerging, interdisciplinary field of research and development with a growing number of social machine instances and studies about them
+
+We propose a classification framework for social machines. Targeted audiences
+
+* research community: shared terminology, set of key features and their possible instantiations based on the analysis of a relevant set of 50 (?) social machines (both popular systems as well as long tail systems); facilitates the study of design and evolution patterns; supports research on how communities emerge and develop and organisational studies (mechanism design, incentives); different research approaches can be better compared and aligned.
+
+* developer community: provides a theoretical grounding for the realisation of new systems, informs system design and operation (what features should be implemented, what features are more important than others); enables predictions on user behaviour and community development.
+
+The framework is based on interviews with XXX researchers covering XXX systems and was preliminary evaluated with respect to ...
+
+
+\section{Methodology (1 page)}
+
+%How was the classification framework defined
+%
+%* interviews with XXX researchers on key descriptive features of systems they are familiar with
+%
+%* consolidation of features listed for a resulting set of 50 (?) social machines
+%
+%* grid analysis to identify groups of similar systems
+%
+%* evaluation with respect to correctness, completeness, clarity, extendability in user survey, additional data set of XXX systems
+%
+
+In order to identify and classify social machines, we first embarked on a principled
+knowledge elicitation process~\cite{knowledgeelicitation}, to determine the {\it elements}
+(i.e., the social machines) and the {\it constructs} (i.e., the classifying factors) that
+we can use to classify social machines. We used the {\it repertory grid} elicitation
+technique~\cite{kelly} in order to derive an initial set of elements and constructs. We
+asked ten Computer Science researchers familiar with social machines to create their own
+repertory grids, and populate the elements from their own knowledge, and to create the
+constructs using the standard repertory grid elicitation technique. This exercise led
+to 10 grids, the union of which comprised a total of 56 unique elements (social machines)
+and 117 different constructs.
+
+To make the set of social machines easier to refer to and more approachable, we performed
+an initial grid analysis of the machines, clustering them into related user-centered
+themes, of: Social Networks, (Micro)Blogging, News Aggregators, Image Boards, Crowd Science,
+Answer Gardens, Community Watch, Health and Wellbeing Support, Action and Investigation,
+Opinion Sharing, Video Sharing, Photo Sharing, Code Sharing, Art Sharing, Crowdsourcing
+Platforms, Mash-up Systems, Crowdsourcing Toolkits and Platforms.
+
+While determining the intersection of elements was straightforward, the consolidation of the
+constructs required a more thorough process. To consolidate the constructs we embarked on a manual process of grouping the constructs
+into rough clusters, based around the areas they cover. For example, we used construct
+clusters including: Users, Motivation, Popularity, Technology, and Purpose. We then examined
+each construct to determine which were equivalent, and whether we could re-word or subsume
+existing constructs to cover the same aspects as a construct, with the aim to remove any
+redundancy, to cut the list of constructs down to a manageable number, but to ensure that
+all of the constructs that were elicited were somehow represented in the final set. This
+process involved four of the authors discussing the choices, and finally agreeing on a
+consolidated set of 31 constructs.
+
+Even with this reduced set of constructs, if a single person were to classify all 56
+elements, this would still require 1736 individual decisions, and hence is unfeasible to
+expect full coverage of the elements using all of these constructs, despite how representative
+they are.
+
+
+[something here about doing 2 grids each and verifying the results?]
+
+To extract greater usefulness, and the ability to use our constructs to classify social
+machines we re-evaluated the constructs and the semantics that they represent into richer
+constructs that are not constrained by the 1--5 rating of repertory grid constructs.
+
+
+\section{Classification framework (2 pages)}
+
+%First explain main principles: Distinction between application system and enabling technology; contributions, actions, activities, purpose, etc
+
+To create a classification framework, it is necessary to first determine the aspects of
+classification. We will first discuss the relationships between social
+machines, enabling technologies and platforms; we move on to discuss the multi-faceted
+nature of motivation within social machines; next we evaluate the artefacts of social
+machines: contributions, actions, activities and purpose; finally we discuss the metrics of
+participation, and the difference between designed and emergent properties of social
+machines.
+
+
+\subsection{The Hierarchical/Polyarchical relationship of social machines}
+
+While determining a set of social machines, one clear distinction was between social machine frameworks, such as MediaWiki and Ushahidi, which enable
+social machines to be created, and instantiations of those frameworks into social machines that have been created for a specific purpose, such as Wikipedia
+and Ushahidi Haiti. However, through further investigation, we discovered that the distinction between framework and instantiations was not the only
+differentiator. Specifically, that some social machines could also have sub-machines or communities within them, that are working to solve different problems,
+within the context of the larger machine. For example, Wikipedia is an instantiation of the MediaWiki framework, but there are a large number of
+communities within Wikipedia that work on domain-specific areas, such as those contributing in areas of science and technology\footnote{Visualisation of Wikipedia Science Communities: \url{http://www.olihb.com/WikiCommunities/}}. However, we must also note that wikipedia is primarily split into communities of language, with the English, German and French wikipedias having the largest number of articles. It is therefore possible to analyse wikipedia into a hierarchy, from MediaWiki, to the languages of Wikipedia, down to the domain-specific communities. We explored this idea further, to include other social machines, and links where social machines utilise other social machines in order to function. For example, the social machine used by the Obama '12 US Presidential campaign~\cite{obamakieron}, which relied on social machines such as Twitter and Facebook.
+
+Looking at the set of social machines in a polyarchy leads to a broad/specific relationship emerging that lets us talk about behaviours at various levels of granularity.  We propose looking at nested machines with ``The Web'' as one of several potential roots, with the next level down consisting of sub-platforms (such as Facebook, Twitter, MediaWiki, Ushahidi platforms) that spawn more specific social machines. A resulting polyarchy is shown in Figure~\ref{polyarchy}, which classifies levels as Infrastructure, Frameworks, Services and Causes/Groups.
+
+\begin{figure*}[htb]
+\begin{center}
+\includegraphics[width=18cm]{img/polyarchy.pdf}
+\caption{A polyarchy of Social Machines, illustrating the infrastructure and frameworks used by social machines, and machine-machine usage.} \label{polyarchy}
+\end{center}
+\end{figure*}
+
+This approach enables us to start with a more detailed analysis of certain levels over others;
+and seeing what similarities flow up and down the polyarchy. For example, what do
+specific instances of Ushahidi/Zooniverse/MediaWiki have in common with other instances, and
+how to they differ dynamically?
+
+\subsection{Multi-faceted motivation, and who-gets-what benefit}
+
+We identified a hierarchy of constructs pertaining to the motivation people have for using social
+machines with top level constructs of:
+
+\begin{enumerate}
+\item Hedonistic
+\item Financial
+\item To be informed
+\item To help others
+\end{enumerate}
+
+The sub constructs are illustrated in Figure~\ref{motivation}, and we relate them to Maslow's hierarchy of needs~\cite{maslow}, (e.g., self-actualisation, security, respect of others), in various ways.
+
+\begin{figure*}[htb]
+\begin{center}
+\includegraphics[width=18cm]{img/motivation.pdf}
+\caption{Motivation hierarchy of participants using Social Machines, related to Maslow's hierarchy of needs.} \label{motivation}
+\end{center}
+\end{figure*}
+
+For each of these motivations, different roles that participate may have different {\it core motivations}, such as:
+
+\begin{enumerate}
+\item Benefit to contributor
+\item Benefit to moderator
+\item Benefit to system operator/host (e.g, Google, Facebook, Amazon)
+\item To affiliates of the host (e.g., Amazon affiliates, YouTube partners)
+\item To society as a whole
+\item To a contributor's social network
+\end{enumerate}
+
+In addition to relationships to Maslow's hierarchy of needs, which drive the motivations,
+we suggest that there are also resulting actions from each motivation. Thus, it should be
+possible to follow basic human needs to motivations in social machines, through to the
+actual actions (and therefore the necessary software feature support) that are made by
+participants in social machines. Our theory is that this path may enable designers of
+social machines to satisfy human needs by implemented specific features into their social
+machines, or to identify potential gaps in their serving of needs and motivations due
+to lack of implemented features.
+
+
+\subsection{Artefacts of Social Machines}
+
+Our next observation was that there are a number of shared artefact types that can be classified within the context of social machines. Specifically that
+there are ``intentions'' that motivate the use of social machines, ``actions'' that are directly performed by participants of social machines, and ``contributions``
+that result from the use of social machines. We have taken these abstract concepts, and mapped them to a number of well-known social machines in order
+to demonstrate that these concepts can be used to compare and contrast different machines.
+
+[more here]
+
+
+\subsection{Metrics of participants and usage}
+
+Finally, we identified several constructs that are relevant for all social machines. First, there are construct that relate to ``analytics'' that can be measured at a point in time, and may change over time. We have documented these constructs in Table~\ref{table:constructs}. In the left column we list construct regarding the design affordances of the social machine. In the middle column we have a mixture of the result of how the design affordances actually were realised by the social computation, such as how users co-opted / incorporated / interpreted the constraints. Finally, in the right column we list analytical measures of social machines which are subject to change over time.
+
+
+\begin{table*}[htbp]
+\begin{center}
+\begin{tabular}{|p{18cm}|}
+\hline
+{\bf Designed Affordances} \\
+\hline
+Domain specificity [1 - Specific / 5 - General] vs \\
+\hspace{0.66cm} Generality of Purpose \\
+Visibility and importance of a participants `reputation' [1 - Not important / 5- Important] \\
+\hspace{0.66cm} Explicit representation of participant reputation [1 - No Reputations / 5 - Reputations] \\
+Participants can define new types of contributions [1 - Not possible / 5 - Complete freedom] \\
+Degree of open source software used/created [1 - Proprietary / 5 - Entirely open source] \\
+Degree of openness and availability of data created in the system (APIs/Dumps) [1 - Closed/unavailable data / 5 - Completely open data] \\
+Variety of actions participants can perform [1 - Single Action / 5 - Large variety of actions] \\
+\hline
+{\bf Participatory Affordances} \\
+\hline
+(Level of social features) - Supports social interaction [1 - No social features / 5 - Large variety of social features] \\
+How often a participant participates (times a day, etc) [1 - Many times a day / 5 Seldom] \\
+Importance of Timely Participation [1 - Unimportant / 5 - Timely] \\
+Generality of Audience [1 - Niche / 5 - General] \\
+Participant anonymity [1 - No Anonymity / 5 - Complete Anonymity] \\
+Participant autonomy (1 - No autonomy / 5 - Complete autonomy) \\
+Quality of participant contributions [1 - Low quality / 5 - High quality] \\
+(Different roles clearly defined) - \\
+\hspace{0.66cm} Clear separation of roles/responsibilities among participants - [1 - Single role - Everyone is the same) / 5 - People assume different roles/responsibilities] \\
+	Extent of hierarchical organisation of roles [1 - No Hierarchy / 5 - Deep/Well-defined Hierarchy] \\
+Variety of types of contributions [1 - Single Type / 5 - Large variety of types] \\
+Participants are motivated by extrinsic award  [1 - Disagree / 5 - Agree] \\
+Participants are intrinsically motivated [1 - Disagree / 5 - Agree] \\
+Service/Platform derives benefit from participant participation [1 - Disagree /  5- Agree] \\
+Participants directly benefit from participating [1 - Disagree / 5 - Agree] \\
+Participants' friends/social network benefit from participation [1 - Disagree / 5 - Agree] \\
+Participation is for the benefit of a specific person/group other than the participant or platform owner [1-Disagree / 5-Agree] \\
+Participation is for the benefit of society/the world at large  [1 - Disagree / 5 - Agree] \\
+Participation is done to `get something done' [1-Disagree/5-Agree] \\
+Participation is done `for fun' [1-Disagree/5-Agree] \\
+Participation is done to exchange knowledge [1-Disagree/5-Agree] \\
+Participation is done to be social [1-Disagree/5-Agree] \\
+Participation is done via mobile devices [1-Never / 5 - Often] \\
+Participants' (geographic) location is used by the service [1-No / 5 - Very] \\
+\hline
+{\bf Analytics} \\
+\hline
+Popularity [1 - Unpopular / 5 - Very Popular] \\
+Maturity [1 - New / 5 - Mature] \\
+Ratio of passive to active participants [1 - Passive / 5 - Active] \\
+Number of competitors [1 - Not Many / 5 - Many] \\
+Extent of global geographic coverage [1 - Highly localised / 5 - Global]\\
+\hline
+\end{tabular}
+\end{center}
+\caption{Constructs of social machines, listing affordances that are designed into machines, affordances that have resulted from use, and analytical constructs that can be measured and change over time.} \label{table:constructs}
+\end{table*}%
+
+The result is what we call `participation' constructs. These constructs arise from use of a
+social machine, and are not necessarily predictable; they include:
+
+\begin{enumerate}
+\item {\bf Roles emerging in the social machine}
+   \newline In addition to designed and implemented roles such as {\it moderator} and {\it administrator}, emerging roles include motivations of the participant, such as {\it trolls}, {\it spammers}, {\it domain experts}, {\it social nexus}, and {\it re-blogger}.
+\item {\bf Quality of contributions}
+    \newline For any social machine, the quality of contributions will vary. While some
+    issues with quality can be predicted and protected against (e.g., through 
+    multi-user result agreement on Mechanical Turk~\cite{ipeirotis2010quality}), some
+    particular issues with quality cannot always be predicted ahead of time.
+\item {\bf Content of contributions}
+    \newline While a system operator may design their social machine to generate specific
+    types of content, participants may subvert the system in order to generate other types,
+    or to concentrate on areas that were unforeseen at the time of launch, but are now seen
+    as useful to the operators. It is also possible that multiple social machines can be
+    combined/linked by users to further expand the types of contributions they produce.
+\item {\bf Global / cultural reach}
+    \newline A social machine may naturally focus on a narrow geographic area, for example
+    an Ushahidi-based social machine for local elections~\cite{meier2008crisis} or
+    natural disasters~\cite{morrow2011independent}. Such machines are unlikely to be
+    re-purposed by participants outside of that area. However, some machines have been
+    created for a single cultural/global area, but have potential global relevance that was
+    unforeseen early on. An example is the fall-off of English-language users of the
+    social network ``Orkut,'' which gained significant usage elsewhere, particularly in
+    Brazil.
+\item {\bf Task reach --- what do people use it for?}
+    \newline In addition to breaking cultural barriers, user have also shown that they can
+    use social machines for tasks that were not set up by the system operators. For example
+    the identification of ``Green Pea Galaxies'' using the GalaxyZoo social machine for
+    astronomy~\cite{greenpea}. Users were not originally asked to identify these types, but
+    a number of users identified them, and the software was modified to include them,
+    resulting in their discovery as a new type of galaxy.
+\item {\bf Active/Passive participation roles}
+    \newline When it comes to participation in social machines, there are levels of
+    participation that can be classified as being ``active'' and being ``passive.'' These
+    roles may not be particularly designed into systems, but may be exhibited over time.
+    Particularly noteworthy examples can be seen in news and link aggregation social
+    machines such as Reddit and Digg, where users can both submit links and vote on links.
+    The frequency of each of these activities can vary wildly, with a small
+    minority of users controlling the links that rise to the top~\cite{digg}.
+\end{enumerate}
+
+
+\section{Usage examples (0.5 page)}
+
+
+%Wikipedia
+%
+%GalaxyZoo (?)
+%
+%Ushahidi
+%
+%Facebook
+%
+%MechanicalTurk
+%
+%GWAPs
+
+In order to demonstrate usage of our framework's constructs, we ranked our social machines
+by their Alexa ranking, and performed a full repertory grid elicitation exercise. The
+results are illustrated in a grid and accompanying dendrograms for element and construct
+similarity in Figure~\ref{dendrogram}.
+
+\begin{figure*}
+\begin{center}
+\includegraphics[width=18cm]{img/dendrogram.png}
+\caption{Dendrogram from a repertory grid exercise of the top 20 (ranked by Alexa) social machines from our element set, against our consolidated constructs.} \label{dendrogram}
+\end{center}
+\end{figure*}
+
+[needs some discussion on what this shows.]
+
+\subsection{Causes as Social Machines}
+
+One originally unforeseen classification is that of the causes that utilise Social Machines.
+Through a particularly popular cause, large numbers of participants can be mobilised, for
+either a short period of time, or for long-term engagement, using multiple social machines
+in order to further their cause. Examples of causes can be seen in Figure~\ref{polyarchy},
+at the lowest level of the polyarchy. One such example is the cause of ``Open Access'' to
+academic publications~\cite{harnad2001self}. This cause mobilises academic authors to
+self-archive their own papers online so they are available for free, in addition to hosted
+versions behind publishers pay-walls. In order to achieve this aim, the social machine of
+``open access'' typically uses the social machines of institutional repositories provided
+by the authors' associated institutions. As with other social machines, these social
+machines typically use off-the-shelf implementations (in this case the most popular are
+EPrints~\cite{eprints} and DSpace~\cite{dspace}), which run as web sites on the world wide
+web. This cause is mature, growing year-on-year and has global coverage.
+
+[more about this?]
+
+\section{Related work (0.5 pages)}
+
+existing classification systems in CSCW, collective intelligence, social computing systems
+
+\section{Conclusions and future work (0.5 pages)}
+
+Detail evaluation plans
+
+Feedback from different disciplines, and from the developers community
+
+%ACKNOWLEDGMENTS are optional
+\section{Acknowledgments}
+
+This work is supported under SOCIAM: The Theory and Practice of Social Machines.  The SOCIAM Project is funded by the UK Engineering and Physical Sciences Research Council (EPSRC) under grant number EP/J017728/1 and comprises the Universities of Southampton, Oxford and Edinburgh.
+
+%
+% The following two commands are all you need in the
+% initial runs of your .tex file to
+% produce the bibliography for the citations in your paper.
+\bibliographystyle{abbrv}
+\bibliography{sigproc}  % sigproc.bib is the name of the Bibliography in this case
+% You must have a proper ".bib" file
+%  and remember to run:
+% latex bibtex latex latex
+% to resolve all references
+%
+% ACM needs 'a single self-contained file'!
+%
+%APPENDICES are optional
+
+
+\balancecolumns % GM June 2007
+% That's all folks!
+\end{document}
