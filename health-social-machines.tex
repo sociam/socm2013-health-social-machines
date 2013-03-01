@@ -121,7 +121,7 @@ Authors\\
 \maketitle
 \begin{abstract}
 
-Health social machines ...
+(Abstract coming soon!)
 
 \end{abstract}
 
@@ -152,11 +152,11 @@ technologically-mediated interaction of large groups of individuals,
 typically via a website, app, and sensor-based online community.
 Individuals usually communicate and interact, directly or indirectly,
 through some mediated or moderation mechanisms, in order to
-collectively accomplish or address a health-related problem or need.
-Such problems, as we illustrate through examples we provide later, may
-be on the scale of an individual's disease or well-being management,
-to that of contributing evidence and insight to fundamental questions
-at the frontier of modern medicine.
+collectively accomplish or address a health-related problem or need
+\cite{hendler2010semantic}.  Such problems, as we illustrate through
+examples we provide later, may be on the scale of an individual's
+disease or well-being management, to that of contributing evidence and
+insight to fundamental questions at the frontier of modern medicine.
 
 We first describe the emerging landscape of health-related social
 machines, identifying sets of classes and characteristics such
@@ -195,19 +195,22 @@ A large number, but not all, of such fitness machines either require,
 or are designed to complement, sensor devices that are intended to
 simplify regular measurement of various vital statistics of the
 individual.  As such, they are designed to be quick and easy to use,
-and, even, in some cases, worn directly on the body, for the measurement
-of physiological signals or activity levels, at high temporal
-granularity. These on-body activity measurement devices range from
-simple accelerometer-based devices (such as the FitBit, Nike
-FuelBand), that can approximately estimate the number of
+and, even, in some cases, worn directly on the body, for the
+measurement of physiological signals or activity levels, at high
+temporal granularity. These on-body activity measurement devices range
+from simple accelerometer-based devices (such as the
+FitBit\footnote{FitBit - \url{www.fitbit.com}}, Nike+\footnote{Nike+ -
+  \url{nikeplus.com}}, that can approximately estimate the number of
 steps/distance the wearer has travelled in a day, to slightly more
-complex on-body devices (such as the BodyMedia CORE) that measure
-multiple physiological signals in tandem with activity level.  Other,
-non-worn devices include iPhone-enabled blood pressure cuffs (e.g.
-Withings' Blood Pressure Monitor), internet-connectivity enabled
-weight/body mass index scales (e.g., Withings' WiFi Scale), and
-iPhone-enabled heart rate, blood oxygen level measuring devices (e.g.,
-Zensorium Tinke).  
+complex on-body devices (such as the BodyMedia CORE\footnote{BodyMedia
+  - \url{www.bodymedia.com}}) that measure multiple physiological
+signals in tandem with activity level.  Other, non-worn devices
+include iPhone-enabled blood pressure cuffs
+(e.g. Withings'\footnote{Withings - \url{www.withings.com}} Blood
+Pressure Monitor), internet-connectivity enabled weight/body mass
+index scales (e.g., Withings' WiFi Scale), and iPhone-enabled heart
+rate, blood oxygen level measuring devices (e.g.,
+Zensorium\footnote{Zensorium - \url{www.zensorium.com}} Tink\'{e}).
 
 \subsection{Disease management}
 
@@ -244,19 +247,17 @@ others like them.
 \begin{center}
 \begin{tabular}{|p{8cm}|}
 \hline
-{\bf Preventative wellness} \\
-\hline
+{\bf General preventative fitness:} \\
 Device-based: Nike+, FitBit, Withings, BodyMedia, Zeo \\
 App-based: RunKeeper, Lose-It, Fitness Pro, GymGoal \\
 Site-based: Fitocracy, Traineo, Dailyburn, ExtraPounds, SparkPeople  \\
 \hline
-{\bf Disease management} \\
-\hline
+{\bf Disease management:} \\
 ALZConnected (Alzheimer's patients),  \\
 Prevent (Pre-diabetics), \\
 BigWhiteWall \\
 \hline
-{\bf Collective sensemaking} \\
+{\bf Collective sensemaking:} \\
 PatientsLikeMe \\
 \hline
 \end{tabular}
@@ -281,6 +282,7 @@ observations pertaining to how they supported the goals each sought to
 achieve.  We describe each, in turn, next
 
 \subsection{Supporting behaviour change}
+\label{sec:intervention}
 
 In order to support individuals to conform to their behaviour change
 interventions, we identified the following elements that these machines
@@ -414,7 +416,7 @@ compliance and understanding of how an individual is behaving and can
 improve their performance.
 
 \subsection{Sustaining Motivation}
-
+\label{sec:motivation}
 A second challenge concerns the effectiveness the methods applied by
 health social machines towards sustaining long-term involvement, in
 particular for encouraging compliance and adherence to the more
@@ -476,8 +478,121 @@ forums such as PatientLikeMe, collective conformation could dramatically
 shape the conclusions that patients arrive at, and that future patients
 might experience.
 
-\section{Towards More Effective Machines}
+\subsection{Device and App-centricity}
 
+An additional problem pertains to the fact that a majority of the
+current behavior intervention machines described earlier are highly
+device and app-centric; that is, the sensor(s) and app(s) designed to
+record data are closely integrated with the methods for storing the
+data, and the intervention delivery mechanisms.  This means that, in
+these machines, the device and app makers retain the data collected
+about and by users, and specified the kinds of interventions that are
+possible, often in a one-size-fits-all approach.  This
+vendor-centricity precludes the kinds of highly personalised,
+multifaceted medicine which is likely to be more effective in the long
+term, which may, for example, require use of several different
+activity recording devices and interventions in tandem.
+
+\section{Towards Better Health Machines}
+
+In this section, we discuss ways that we think that health social
+machines could be made more effective, by increasing compliance,
+clinical 
+
+\subsection{Educating patients while empowering, not replacing, medical professionals}
+
+While goals of greater patient-empowerment are likely to allow
+individuals to make better health-related decisions in the long term,
+the idea of health social machines should \emph{replace} the expert
+assessments of trained medical profesionals seems ill-advised for the
+foreseeable future. Instead, we proppose to think of health social
+machines as mechanisms for giving individuals both a greater literacy
+about their health concerns and conisderations, and a mechanism by
+which individuals can effectively eliminate barriers to the best
+medical experts and expertise available, whenever and by whomever it
+is needed.
+
+If medical consultations with professionals were shared in a
+PatientsLikeMe social machine context, a number of benefits could be
+gained.  First, patients could weigh and assess several options about
+difficult medical decisions, using advice from others who have had to
+make similar decisions in the past.  Furthermore, if such opinions
+were shared in such forums, there will be pressure on clinicians to
+provide their best, carefully assessed medical opinion for
+individuals, since such opinions might be scrutinised by their peers
+and the general public.  Such transparency would make visible the
+track records of such professionals, and essentially give
+professionals ``public reputations'' that could further be used by
+individuals to make decisions about whom they should trust and why.
+
+In such a scenario, medical specialists would see increasing demand
+for their attention from individuals throughout the world for their
+opinion, and would likely benefit from being able to increase the
+efficiency and effectiveness with which they can assess the
+condition(s) of the patients they see.  Here, additional health social
+machine technology could come into play; specifically, the monitoring
+sensors used in the behavioural intervention machines discussed in
+Section \ref{sec:intervention} could be instead appropriated as
+general-purpose health monitors which could give specialists
+unprecedented, accurate access to an individual's daily activities and
+health.  This information could give doctors valuable context for
+understanding each patient's lifestyle between visits, in order to
+devise more appropriate interventions.
+
+%% A number of challenges pertain to giving practitioners and
+%% professionals then, suitable tools to let them cope with the demand of
+%% potentially millions of individuals that would like their opinion. One
+%% tool that might enable them to gain a quick and effective
+%% understanding of a patient's condition would be
+
+\subsection{Motivation and commitment}
+
+As mentioned in Section \ref{sec:motivation}, the gamification
+approaches currently used to motivate individuals to comply with
+behaviour change intervensions are likely to prove insufficient for
+longer-term, more difficult programmes. Since compliance is mandatory
+for succesfully applying interventions, this is an area where
+formidable challenges remain.
+
+Behavioural economics may provide insight towards approaches that
+might work.  For example, Thaler and Susstein, authors of \emph{Nudge}
+\cite{nudge}, cite several examples of using individuals' \emph{loss
+  aversion} techniques to dramatically motivate individuals who have
+important goals they need to keep.  Specifically, they provide two
+examples where individuals committed to paying their friends or
+academic advisors large sums of money if they failed to meet
+particular goals each month (such as turning in a chapter of a
+dissertation or losing a specified number of pounds).
+
+Due to the importance of motivation, it may make sense to use a
+combination of approaches.  For example, traditional fitness clubs and
+``gym memberships'' provide a combination of pressures to keep members
+attending and participating; first, they cost substantial membership
+fees, which, at least for budget-conscious participants provide an
+incentive to participate; second, they provide a number of strong
+social pressures and expectations -- both from instructors and peers,
+in which missing sessions could cause considerable embarassment.
+
+\subsection{Opening up sensed activity data for repurposing and reuse}
+
+Finally, we believe that decoupling sensing of individuals' physical
+activities and vital statistics from device manufacturers' apps that
+prescribe fixed functionality for such data will simply allow
+individuals to make better use of their activity records.  In
+particular liberating this data for use by general application
+developers will likely unleash widespread interest and innovation in
+new sensor-enabled fitness apps, without causing a market flood of
+near-identical devices (which is what is being experienced now). 
+
+Giving individuals access to this valuable data, and ability to store
+it longitudinally over time should motivate people to continue to log
+and record important aspects of their physical activity and vital
+statistics, so they can better understand their lifestyle and ways that
+their behaviour impacts their general wellbeing.
+
+\section{Conclusion}
+
+%% 
 %% Gym Membership: Thaler & Susstein
 %% Group bias :: it's all in the knowledge elicitation
 %%
