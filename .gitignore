@@ -1,3 +1,8 @@
 *~
 *.aux
 *.log
+.DS_Store
+health-social-machines.pdf
+*.bbl
+*.blg
+*.synctex.gz
