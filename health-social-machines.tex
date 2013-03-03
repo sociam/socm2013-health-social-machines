@@ -100,11 +100,11 @@
 %
 % 1st. author
 \alignauthor
-Authors\\
+Max Van Kleek, Daniel A. Smith, and Nigel R. Shadbolt\\
        \affaddr{Web and Internet Science Group}\\
        \affaddr{University of Southampton}\\
        \affaddr{Southampton, UK}\\
-       \email{\{a,b,c,d,e,f\}@ecs.soton.ac.uk}
+       \email{\{emax,ds,nrs\}@ecs.soton.ac.uk}
 }
 % There's nothing stopping you putting the seventh, eighth, etc.
 % author on the opening page (as the 'third row') but we ask,
@@ -252,23 +252,25 @@ nicknames that may or may not resemble their real names, and to
 disclose or hide their full names from other members of the network.
 
 \subsection{Collective sensemaking}
-The final class of social machines, of which we only found one extant
-example, PatientsLikeMe~\footnote{PatientsLikeMe -
-  \url{www.patientslikeme.com}}, aim to crowd-source knowledge about
-disease, symptoms and treatments to individuals who have personally
-experienced them.  To do this, PatientsLikeMe facilitates the
-independent report of symptoms that individuals are experiencing,
-connections between the symptoms and the particular
-disease(s)/conditions which they have been diagnosed with, and the
-effects of particular treatments on their conditions.  The result of
-this aggregation, at large scale, is a model relating symptoms to
-diseases to treatments and effects.  This model can then be used by
-other individuals in a number of ways; first, those who are
-experiencing symptoms can diagnose themselves based on the
-symptom-disease associations, while those already diagnosed with
-a condition can use the disease-treatment-effects model to choose
-treatment(s) that might lead to the most favourable outcomes, based on experiences of
-others like them.
+The final class of social machines, which is the smallest set,
+including only a handful of existing examples including,
+PatientsLikeMe~\footnote{PatientsLikeMe -
+  \url{www.patientslikeme.com}} and MyHeartMap~\footnote{MyHeartMap -
+  \url{www.med.upenn.edu/myheartmap}}, aim to crowd-source knowledge
+about disease, symptoms, treatments, and available resources to
+individuals who have personally experienced them.  To do this, these
+platforms facilitate the independent report of information, such as
+the symptoms individuals are experiencing, connections between the
+symptoms and the particular disease(s)/conditions which they have been
+diagnosed with, and the effects of particular treatments on their
+conditions.  The result of this aggregation, at large scale, is a
+model relating symptoms to diseases to treatments and effects.  This
+model can then be used by other individuals in a number of ways;
+first, those who are experiencing symptoms can diagnose themselves
+based on the symptom-disease associations, while those already
+diagnosed with a condition can use the disease-treatment-effects model
+to choose treatment(s) that might lead to the most favourable
+outcomes, based on experiences of others like them.
 
 \begin{table}[htb]
 \begin{center}
@@ -280,12 +282,10 @@ App-based: RunKeeper, Lose-It, Fitness Pro, GymGoal \\
 Site-based: Fitocracy, Traineo, Dailyburn, ExtraPounds, SparkPeople  \\
 \hline
 {\bf Disease management:} \\
-ALZConnected (Alzheimer's patients),  \\
-Prevent (Pre-diabetics), \\
-BigWhiteWall \\
+ALZConnected, Prevent, BigWhiteWall \\
 \hline
 {\bf Collective sensemaking:} \\
-PatientsLikeMe \\
+PatientsLikeMe, MyHeartMap \\
 \hline
 \end{tabular}
 \end{center}
@@ -296,14 +296,14 @@ PatientsLikeMe \\
 
 \section{Current Methods of Support}
 \label{sec:support}
-\begin{figure*}[htb]
+\begin{figure}[tb]
 \begin{center}
-\includegraphics[width=14cm]{img/table2-summary.png}
+\includegraphics[width=8.8cm]{img/table2-summary.png}
 \caption{\emph{Support offered by type of machine} - Summary of all of
   the types of support identified across machines, described in
   Section \ref{sec:support}, organised by type of machine.} \label{fig:summaryofsupport}
 \end{center}
-\end{figure*}
+\end{figure}
 
 
 In order to understand better how the social machines just described
@@ -375,8 +375,9 @@ provide words of encouragement or advice.
 
 \subsection{Enabling crowd-based sensemaking}
 
-Health machines that seek to crowdsource information about disease and
-treatments at large scale require the ability to acquire information
+Health machines that seek to crowdsource health-related information,
+including information about diseases, treatments, and available
+resources at large scale require the ability to acquire information
 effectively and as accurately as possible from participants.  Thus,
 effective elicitation of information becomes a primary challenge.
 Towards this capability, PatientsLikeMe supported a structured
@@ -384,7 +385,7 @@ elicitation approach for the gathering of symptoms, relevant diagnosed
 diseases, treatments, and reports of experiences.  Gathering
 structured data directly (in terms of ratings, diseases and treatments
 from a fixed lexicon) allowed these data can be compared and
-aggregated automatically across individuals.  
+aggregated automatically across individuals.
 
 Beyond elicitation, such sites require the ability to produce useful
 views of collected data so that participants are not overwhelmed by
